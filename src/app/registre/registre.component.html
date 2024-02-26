@@ -1,0 +1,31 @@
+
+
+<form id="register-form" [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <h2>Register</h2>
+    <div class="inputbox">
+        <input type="text" formControlName="fullname" required>
+        <label for="">First and Last Name</label>
+    </div>
+    
+    <div class="inputbox">
+        <input type="text" formControlName="username" required>
+        <label for="">username</label>
+    </div>
+
+    <div class="inputbox">
+        <input type="email" formControlName="email" required>
+        <label for="">Email</label>
+    </div>
+    <div class="inputbox">
+        <input type="password" formControlName="password" required>
+        <label for="">Password</label>
+    </div>
+    <div class="inputbox">
+        <input type="password" formControlName="password1" required>
+        <label for="">Confirm Password</label>
+    </div>
+    <div class="forget">
+        <label for=""><input type="checkbox">I agree to the terms and conditions</label>
+    </div>
+    <button>Register</button>
+</form>

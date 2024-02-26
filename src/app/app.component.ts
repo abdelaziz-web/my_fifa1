@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-angular-project';
+  showElements: boolean = true;
+
+  toggleVisibility() {
+    this.showElements = !this.showElements;
+}
+
 }
